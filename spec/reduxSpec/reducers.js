@@ -1,3 +1,4 @@
+
 import rootReducer from '../../src/reducers/main.js';
 import currentVideoReducer from '../../src/reducers/currentVideo.js';
 import videoListReducer from '../../src/reducers/videoList.js';
