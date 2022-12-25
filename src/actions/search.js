@@ -12,11 +12,12 @@ var handleVideoSearch = (q) => {
   //should make a call to the youtube API
   //should dispatch changeVideo
   //should dispatch changeVideoList
-
-  // searchYouTube({YOUTUBE_API_KEY, q}, () => {
-  //   dispatch(changeVideoList(data));
-  //   dispatch(changeVideo(data[0]));
-  // });
+  return (dispatch) => {
+    return searchYouTube({YOUTUBE_API_KEY, q}, (data) => {
+      dispatch(changeVideoList(data));
+      dispatch(changeVideo(data[0]));
+    });
+  };
 };
 
 export default handleVideoSearch;
