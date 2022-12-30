@@ -8,7 +8,7 @@ import exampleVideoData from '../data/exampleVideoData.js';
 
 var store = createStore(
   rootReducer,
-  {videoList: [], currentVideo: {}},
+  {videoList: exampleVideoData, currentVideo: exampleVideoData[0]},
   applyMiddleware(thunk)
 );
   //const store = createStore(rootReducer, storeInitialState);
