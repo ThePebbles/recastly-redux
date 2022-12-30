@@ -6,7 +6,7 @@ import { ReactReduxContext } from 'react-redux';
 
 var VideoPlayer = ({video}) => {
   // const { store } = useContext(ReactReduxContext);
-  console.log('Look at me: ', ReactReduxContext);
+  // console.log('Look at me: ', ReactReduxContext);
   return (
     !video
       ? <div className="video-player">Please wait...</div>
